@@ -1,6 +1,6 @@
 # ALgate Pro - Smart Gateway 📡
 
-> Dokumentasi teknis resmi untuk **ALgate Pro - Smart Gateway** — solusi manajemen MikroTik multi-cabang berbasis Laravel, OpenVPN, dan Telegram Bot Notification.
+> Dokumentasi teknis resmi untuk **ALgate Pro - Smart Gateway** — solusi manajemen MikroTik multi-cabang berbasis WEB dan Android dengan Notifikasi WA, Telegram dan Push Android.
 
 ---
 
