@@ -6,13 +6,17 @@
 
 ## 🗂️ Daftar Panduan
 
+🌐 Website: https://lintas-algate.my.id
+
+📱 Aplikasi Android:
+ALgate Pro - Smart Gateway  https://play.google.com/store/apps/details?id=com.alya.algatefull
+
 | No | Panduan | Deskripsi |
 |---|---|---|
-| 1 | [Setup OpenVPN Server di VPS](docs/openvpn-server-vps.md) | Instalasi dan konfigurasi OpenVPN Server di VPS Ubuntu sebagai pusat koneksi semua cabang |
-| 2 | [Konfigurasi MikroTik OpenVPN Client](docs/mikrotik-openvpn-client.md) | Menghubungkan MikroTik cabang ke VPS via OpenVPN + setup PPPoE Isolir |
-| 3 | [Konfigurasi API MikroTik via IP Publik](docs/mikrotik-api-ip-publik.md) | Mengaktifkan RouterOS API (port 8728) dengan akses terbatas dari IP VPS |
-| 4 | [Setup Telegram Bot & Chat ID](docs/telegram-bot-setup.md) | Membuat bot Telegram, mendapatkan ID bot dan Chat ID grup untuk notifikasi |
-| 5 | [PPPoE Profile Isolir](docs/pppoe-isolir.md) | Membuat profile isolir 10k/10k dan cara assign/lepas via API MikroTik |
+| 1 | [Konfigurasi MikroTik OpenVPN Client](docs/mikrotik-openvpn-client.md) | Menghubungkan MikroTik cabang ke VPS via OpenVPN + setup PPPoE Isolir |
+| 2 | [Konfigurasi API MikroTik via IP Publik](docs/mikrotik-api-ip-publik.md) | Mengaktifkan RouterOS API (port 8728) dengan akses IP Publik |
+| 3 | [Setup Telegram Bot & Chat ID](docs/telegram-bot-setup.md) | Membuat bot Telegram, mendapatkan ID bot dan Chat ID grup untuk notifikasi |
+| 4 | [PPPoE Profile Isolir](docs/pppoe-isolir.md) | Membuat profile isolir 10k/10k dan cara assign/lepas via API MikroTik |
 
 ---
 
@@ -23,7 +27,7 @@
 [MikroTik Cabang 2] ──┼──(Internet)──► VPS ALgate Pro (10.8.0.1)
 [MikroTik Cabang N] ──┘                    │
                                     ALgate Pro Web App
-                                    Notifikasi Telegram Bot
+                                    Notifikasi WA, Telegram, dan Push Android
 ```
 
 | Node | IP Tunnel | Keterangan |
@@ -38,9 +42,7 @@
 ## ⚡ Quick Start
 
 ### Untuk Admin / Server
-1. [Bersihkan VPS lama](docs/openvpn-server-vps.md#bagian-0--bersihkan-vps-lama-fresh-install) (jika reinstall)
-2. [Setup OpenVPN Server](docs/openvpn-server-vps.md#bagian-1--setup-openvpn-server-di-vps-ubuntu)
-3. Generate sertifikat per cabang
+1. Generate sertifikat per cabang
 
 ### Untuk Teknisi Cabang
 1. Terima file sertifikat dari admin (ca.crt, cabangX.crt, cabangX.key)
@@ -60,8 +62,7 @@
 |---|---|
 | Server VPN | OpenVPN 2.4 + Ubuntu 20.04 |
 | Router Cabang | MikroTik RouterOS 6.x |
-| Web App | Laravel + PHP |
-| Notifikasi | Telegram Bot API |
+| Notifikasi | WA, Telegram dan Push Notifikasi Android|
 | Manajemen Bandwidth | PPPoE Profile + RouterOS API |
 
 ---
@@ -70,9 +71,6 @@
 
 - VPS Ubuntu 20.04 dengan IP publik statis
 - MikroTik RouterOS versi 6.x
-- Akun Telegram untuk setup bot notifikasi
-- PHP 8.x + Composer (untuk integrasi Laravel)
-
 ---
 
 ## 📞 Kontak & Support
@@ -80,6 +78,8 @@
 Butuh bantuan teknis? Hubungi kami:
 
 **📱 WhatsApp / Telepon: 081249007936**
+**Channel Tekegram : https://t.me/algatepro**
+**Github : https://github.com/alikmudy/algate-pro-docs**
 
 ---
 
