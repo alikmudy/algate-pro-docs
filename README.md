@@ -16,7 +16,8 @@ ALgate Pro - Smart Gateway  https://play.google.com/store/apps/details?id=com.al
 | 1 | [Konfigurasi MikroTik OpenVPN Client](docs/mikrotik-openvpn-client.md) | Menghubungkan MikroTik cabang ke VPS via OpenVPN + setup PPPoE Isolir |
 | 2 | [Konfigurasi API MikroTik via IP Publik](docs/mikrotik-api-ip-publik.md) | Mengaktifkan RouterOS API (port 8728) dengan akses IP Publik |
 | 3 | [Setup Telegram Bot & Chat ID](docs/telegram-bot-setup.md) | Membuat bot Telegram, mendapatkan ID bot dan Chat ID grup untuk notifikasi |
-| 4 | [PPPoE Profile Isolir](docs/pppoe-isolir.md) | Membuat profile isolir 10k/10k dan cara assign/lepas via API MikroTik |
+| 4 | [PPPoE Profile Isolir](docs/pppoe-isolir.md) | Membuat profile isolir 10k/10k (untuk fungsi tombol isolir manual/otomatis) dan cara assign/lepas via API MikroTik |
+| 5 | [Setup Notifikasi WA](docs/whatsapp-id.md) | MMendapatkan ID WA pribadi dan Chat ID grup untuk notifikasi WA |
 
 ---
 
@@ -24,7 +25,7 @@ ALgate Pro - Smart Gateway  https://play.google.com/store/apps/details?id=com.al
 
 ```
 [MikroTik Cabang 1] ──┐
-[MikroTik Cabang 2] ──┼──(Internet)──► VPS ALgate Pro (10.8.0.1)
+[MikroTik Cabang 2] ──┼──(Internet)──► Server OpenVPN ALgate Pro (10.8.0.1)
 [MikroTik Cabang N] ──┘                    │
                                     ALgate Pro Web App
                                     Notifikasi WA, Telegram, dan Push Android
